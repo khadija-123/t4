@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html leng="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Web Page</title>
+    <link rel="stylesheet" href="style.css">
+   
+   
+  </head>
+  <body>
+    
+    <nav>
+       <input type="checkbox" id="check">
+       <label for="check" class="checkbtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+      <ul class="nav-mobile">
+        <li><a href="#About me">About me</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+
+    <section id="About me">
+
+      <h2>About me</h2>
+  <hr>
+      <img id="image"
+      src="dp.jpg"
+      
+    />
+      <p>I am KHADIJA LIAQUAT, I'm doing my Bachelors in Computer science from NBC. 
+        I'm someone who believes in the power of perseverance and a growth mindset. 
+        I embrace challenges as opportunities to learn and improve,
+         always striving to push my boundaries and explore new horizons.
+          My approach to life is rooted in curiosity and a desire to understand the world around me, 
+          driven by a passion for personal development and continuous progress.
+           Whether it's diving into a new project or refining existing skills,
+            I am committed to giving my best and growing with each experience.</p>
+       
+    </section>
+    <section id="Project">
+      <h2>Project</h2>
+      <hr>
+      <table border="1">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Project 1</td>
+                <td>Blue project.</td>
+                <td><a href="https://example.com/project1" target="_blank">View Project</a></td>
+            </tr>
+            <tr>
+                <td>Project 2</td>
+                <td>Red project.</td>
+                <td><a href="https://example.com/project2" target="_blank">View Project</a></td>
+            </tr>
+            <tr>
+                <td>Project 3</td>
+                <td>white project.</td>
+                <td><a href="https://example.com/project3" target="_blank">View Project</a></td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </section>
+    <section id="skill">
+      <h2>Skills</h2>
+      <hr>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C++</li>
+        <li>Github</li>
+        </ul>
+        <p>Proficiency Levels</p>
+        <ul>
+        <progress value="30" max="100">30%</progress>
+
+        <br><br>
+        <progress value="10" max="100">10%</progress>
+
+        <br><br>
+        <progress value="0" max="100">0%</progress>
+        <br><br>
+      
+        <progress value="80" max="100">80%</progress>
+        <br><br>
+        
+        <progress value="5" max="100">5%</progress>
+
+        <br><br>
+    </ul>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <hr>
+      <h3>Traffic system For emergency vehicles</h3>
+      <p>A project of DLD course design to give priority to emergency vehicles</p>
+      <br></br>
+      <h3>PTCL Internship</h3><p> - 30 days</p>
+      <p>Gpon network system</p>
+      <br>
+ 
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <hr>
+      <form action="your-server-endpoint" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        <br><br>
+       
+        <input type="submit" value="Send Message">
+        <br><br>
+      </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 . All rights reserved.</p>
+    </footer>
+  </body>
+</html>

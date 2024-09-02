@@ -1,0 +1,172 @@
+body {
+  font-family: "Times New Roman", Times, serif, sans-serif;
+  background-color: #d6c188;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 10px;
+  background-color: #ee950f;
+  color: #333;
+  position: relative;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  z-index: 10;
+}
+
+.checkbtn {
+  cursor: pointer;
+  display: none;
+  padding: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(247, 247, 247);
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+.nav-mobile {
+  list-style: none;
+  display: flex; 
+  flex-direction: row;
+}
+
+.nav-mobile li {
+  margin: 0 15px;
+}
+
+.nav-mobile li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+}
+#check {
+  display: none; 
+}
+
+#check:checked + .checkbtn + .nav-mobile {
+  display: flex; 
+  flex-direction: column; 
+}
+.nav-mobile a:hover {
+  background-color: #f07523;
+  color: rgb(14, 13, 13);
+}
+section {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #fad37e;
+  border-radius: 5px;
+  width: 60%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: #B7410E;
+  width: 100%;
+  margin: 20px auto;
+  margin-bottom: 30px;
+}
+footer {
+  margin-top: 10px;
+  background-color: rgb(241, 68, 15);
+  text-align: center;
+  padding: 4px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #991717;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #e78e53;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #e78e53;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkbtn {
+    display: block; 
+    font-size: 2.5rem;
+    position: relative; 
+    z-index: 11;
+  }
+
+  .nav-mobile {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    background-color: #ee950f;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .nav-mobile li {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .nav-mobile a {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    display: block;
+  }
+
+  section {
+    width: 90%; 
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+    padding: 6px; 
+  }
+
+  footer {
+    padding: 10px; 
+    font-size: 14px; 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .checkbtn {
+    font-size: 2.5rem;
+  }
+
+  section {
+    width: 95%;
+    padding: 10px;
+  }
+
+  table, th, td {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
